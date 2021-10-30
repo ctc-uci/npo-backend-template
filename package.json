@@ -8,7 +8,9 @@
   "license": "MIT",
   "scripts": {
     "start": "nodemon app.js",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint": "eslint '**/*.{js}'",
+    "format": "prettier --write \"**/*.+(js)\""
   },
   "lint-staged": {
     "*.{js,jsx}": "yarn run eslint"
