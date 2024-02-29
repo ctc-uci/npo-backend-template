@@ -1,4 +1,4 @@
--- FIXME: delete samplep file
+-- FIXME: delete sample file
 
 DROP TABLE IF EXISTS sample CASCADE;
 
