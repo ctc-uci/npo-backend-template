@@ -5,9 +5,9 @@ This template will be used to create all NPO backend repos
 
 To start working on with this project, follow these steps:
 1. Install the [EditorConfig plugin](https://editorconfig.org/#download) for your IDE.
-1. Add the `.env` file stored in your projects Google Drive folder to the root of the project.
-1. Install NodeJS and yarn following the [instructions here](https://classic.yarnpkg.com/lang/en/docs/install).
-1. Navigate to the project folder in your terminal and run `yarn` to install required packages.
+2. Install NodeJS and yarn following the [instructions here](https://classic.yarnpkg.com/lang/en/docs/install).
+3. Configure environment variables with `dotenv-vault` ([install here](https://www.dotenv.org/docs#getting-started)) following [instructions here](https://www.dotenv.org/docs/quickstart/sync#pull-env).
+4. Navigate to the project folder in your terminal and run `yarn` to install required packages.
 
 ## Project branching structure
 
