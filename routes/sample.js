@@ -11,7 +11,7 @@ sampleRouter.use(express.json());
 sampleRouter.get('/', async (req, res) => {
   try {
     // Query database
-    const data = { };
+    const data = {};
 
     res.status(200).json(keysToCamel(data));
   } catch (err) {
@@ -21,10 +21,10 @@ sampleRouter.get('/', async (req, res) => {
 
 sampleRouter.post('/', async (req, res) => {
   try {
-    const { _ } = req.body;
+    // Destructure req.body
 
     // Do something with request body
-    const data = { };
+    const data = {};
 
     res.status(200).json(keysToCamel(data));
   } catch (err) {
