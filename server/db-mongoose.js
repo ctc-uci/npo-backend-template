@@ -1,10 +1,7 @@
 // FIXME: keep file only if using mongodb
 const mongoose = require('mongoose');
 
-const mongoURI =
-  process.env.NODE_ENV === 'development' ? process.env.DEV_DB_URI : process.env.PROD_DB_URI;
-
-mongoose.connect(mongoURI, {
+mongoose.connect(process.env.DB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
