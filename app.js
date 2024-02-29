@@ -1,5 +1,7 @@
 const express = require('express');
 const cors = require('cors');
+// Routes
+const sampleRouter = require('./routes/sample'); // FIXME: delete sample router
 
 require('dotenv').config();
 
@@ -13,6 +15,9 @@ app.use(
   }),
 );
 
-app.listen(PORT, () => {
-  console.log(`Server listening on ${PORT}`);
+app.use(express.json()); // for req.body
+app.use('/', sampleRouter); // FIXME: delete sample endpoint
+
+app.listen(SERVER_PORT, () => {
+  console.log(`Server listening on ${SERVER_PORT}`);
 });
